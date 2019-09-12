@@ -9,7 +9,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 
 f = open("foo.txt", "r")
-print(f.read())
+print("\n", f.read(), "\n")
 # YOUR CODE HERE
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
@@ -17,9 +17,9 @@ print(f.read())
 # then close the file. Open up "bar.txt" and inspect it to make 
 # sure that it contains what you expect it to contain
 g = open("bar.txt", "w")
-g.write("Hello\n")
-g.write("Goodbye\n")
-g.write("Why do you say Goodbye?\n")
+g.write("Hey Jude\n")
+g.write("Don't make it bad\n")
+g.write("Take a sad song...and make it better...\n")
 g.close()
 g = open("bar.txt", "r")
 

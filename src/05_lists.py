@@ -19,12 +19,12 @@ print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE 
-x.remove(8)
+x.pop(4) #or x.remove(8)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE 
-x.insert(5, 99)
+x.insert(5, 99) #inserts 99 at index 5
 print(x)
 
 # Print the length of list x
@@ -35,5 +35,9 @@ print(len(x))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
 
-for item in x:
-    print(item * 1000)
+# for item in x:
+#     print(item * 1000)
+
+result = map(lambda x: x * 1000, x)
+print(list(result));
+

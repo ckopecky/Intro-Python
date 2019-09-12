@@ -17,4 +17,5 @@ z = "I like turtles!"
 # Finally, print the same thing using an f-string
 print('%s %s %s old style' % (x, y, z))
 print('{} {} {} format syntax'.format(x, y, z))
-print(f'{x} {y} {z} f syntax')
+print(f"{x} {y} {z} f syntax") #this doesn't work when running outside of virtualenv if you have python 2.7 on mac. 
+

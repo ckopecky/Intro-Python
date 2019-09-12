@@ -18,10 +18,10 @@ y = "7"
 def combine(x, y):
     print(x+ y)
 
-combine(5, int("7"))
+combine(x, int(y))
 
 # Write a print statement that combines x + y into the string value 57
 
 # YOUR CODE HERE
 
-combine("5", "7")
+combine(str(x), y)

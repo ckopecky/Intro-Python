@@ -49,13 +49,17 @@ waypoints.append(lastpoint)
 # value is -130 and change its name to "not a real place"
 # YOUR CODE HERE
 
-first = waypoints[slice(0, 1)]
-first[0]["name"] = "not a real place"
-first[0]["lon"] = -130
-# print(first[0])
+
+for item in waypoints:
+    if(item["name"] == "a place"):
+        item["lon"] = -130
+        item["name"] = "not a real place"
+
+print(waypoints, "second time")
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-for item in waypoints:
-    print(item)
+for item in waypoints: 
+    for key in item:
+        print(key,": ", item[key])
